@@ -20,6 +20,4 @@ For those who want to take a look at the localization file before making decisio
 
 Thanks everyone!
 
-Bob
-Partner, Global Ecosystem
-TrustNote foundation
+Bob, Partner, Global Ecosystem, TrustNote foundation

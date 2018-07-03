@@ -4,3 +4,6 @@ Token distribution mainly USES the TRC20 standard of TrustNote public chain. Wit
 2) Token issuing process
 
 Token distribution can be conducted with TrustNote's Headless Wallet. Currently, the Demo USES a full node Wallet, which will be updated later. The main process is as follows.
+
+
+https://github.com/trustnote/trustnote-token

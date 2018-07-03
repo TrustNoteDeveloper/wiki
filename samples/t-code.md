@@ -1,4 +1,4 @@
-3. T-code password red envelope
+T-code password red envelope
 
 The function of T password is to transfer the assets in the wallet by generating T password and exchange T password. The whole process is to decentralize the service. Every time a T password is generated and a T password is converted, the transfer process is completed, so a little TTT is consumed as fuel.
 

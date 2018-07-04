@@ -4,7 +4,7 @@ T口令就是16个字符的密码，只是生成的每一个T口令（T口令1�
 
 原理图如下图所示：
 
-![](./images/t-code.png)
+![](https://github.com/TrustNoteDevelopers/wiki/raw/master/samples/images/t-code.png)
 
 当前钱包在github位置：https://github.com/trustnote/trustnote-wallet
  

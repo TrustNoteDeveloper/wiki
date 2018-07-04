@@ -6,11 +6,11 @@ Developers need to deploy a headless server on their own and build a business sy
 
 From a technical point of view, it is through the two interfaces of getnewaddress and getaddressbalance to build the order system based on the TrustNote chain. Through the sendtoaddress interface, payment can be made to the winning user.
 
-![](samples\images\worldcup2018_01.jpg)
+![](https://raw.githubusercontent.com/TrustNoteDevelopers/wiki/master/samples/images/worldcup2018_01.jpg)
 
 To build such a guessing game, you only need to use these three interfaces. The technical principles and implementation methods are described in detail below.
 
-![](samples\images\worldcup2018_02.jpg)
+![](https://raw.githubusercontent.com/TrustNoteDevelopers/wiki/master/samples/images/worldcup2018_02.jpg)
 
 1) generate the collection address
 

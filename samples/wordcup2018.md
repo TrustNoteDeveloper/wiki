@@ -6,11 +6,11 @@ Developers need to deploy a headless server on their own and build a business sy
 
 From a technical point of view, it is through the two interfaces of getnewaddress and getaddressbalance to build the order system based on the TrustNote chain. Through the sendtoaddress interface, payment can be made to the winning user.
 
-![](https://raw.githubusercontent.com/TrustNoteDevelopers/wiki/master/samples/images/worldcup2018_01.jpg)
+![](./images/worldcup2018_01.jpg)
 
 To build such a guessing game, you only need to use these three interfaces. The technical principles and implementation methods are described in detail below.
 
-![](https://raw.githubusercontent.com/TrustNoteDevelopers/wiki/master/samples/images/worldcup2018_02.jpg)
+![](./images/worldcup2018_02.jpg)
 
 1) generate the collection address
 
@@ -18,8 +18,13 @@ When a user makes a bet, the system generates a new TTT wallet address, which is
 
 The ability to generate new addresses USES the getnewaddress method in headless. As shown in the figure below, getnewaddress returns a newly produced wallet address in the headless server.
 
-$curl -- data '{" jsonrpc ":" 2.0 ", "id" : 1, "method" : "getnewaddress", "params" : {}}' http://127.0.0.1:6332 {" jsonrpc ":" 2.0 ", "result" : "QZEM3UWTG5MPKYZYRMUZLNLX5AL437O3", "id" : 1}
+```
+$curl -- data '{" jsonrpc ":" 2.0 ", "id" : 1, "method" : "getnewaddress", "params" : {}}' http://127.0.0.1:6332 
+```
 
+```
+{" jsonrpc ":" 2.0 ", "result" : "QZEM3UWTG5MPKYZYRMUZLNLX5AL437O3", "id" : 1}
+```
 
 2) check the payment status
 
@@ -27,9 +32,13 @@ The newly generated address balance is 0, and every time the user makes a commen
 
 Using the getaddressbalance interface in headless, you can query the balance of the specified address. In the World Cup guessing game, after users scan the code to pay, the system will regularly check the balance of the address just generated. If the balance is greater than 0, the order will be considered effective. The usage of getaddressbalance is as follows:
 
+```
 Curl -- data '{" jsonrpc ":" 2.0 ", "id" : 1, "method" : "getaddressbalance", "params" : [" AC32OSLNT64L2B2GARP7SNFDPR3WDNZZ "]}' http://127.0.0.1:6332
-{" jsonrpc ":" 2.0 ", "result" : {" address ":" AC32OSLNT64L2B2GARP7SNFDPR3WDNZZ ", "objBalance" : {" bytes ": 0," QXZVREFQWR0pM0qrZ + d + HIeJTEyMkd rgB7 / Syp6Ufk = ": 10000}}," id ": 1}
+```
 
+```
+{" jsonrpc ":" 2.0 ", "result" : {" address ":" AC32OSLNT64L2B2GARP7SNFDPR3WDNZZ ", "objBalance" : {" bytes ": 0," QXZVREFQWR0pM0qrZ + d + HIeJTEyMkd rgB7 / Syp6Ufk = ": 10000}}," id ": 1}
+```
 
 3) transfer
 

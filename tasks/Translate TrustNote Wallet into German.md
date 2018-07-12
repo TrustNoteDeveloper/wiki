@@ -10,7 +10,7 @@ https://github.com/trustnote/trustnote-wallet/tree/master/i18n/po
  
 You can rename the file into tr-TR.pot and add Turkish translation into the msgstr like this:
 msgid "(English)"
-msgstr "(Turkish)"
+msgstr "(German)"
  
 In the same GitHub folder you can find a file called zh-CN.pot, that is a Chinese resource file and you can use that one as an example.
  
